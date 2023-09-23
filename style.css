@@ -175,7 +175,7 @@ font-weight:900;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 
 
@@ -207,6 +207,7 @@ font-weight:900;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+    margin-top: auto;
     
 }
 
