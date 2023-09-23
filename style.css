@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css?family=Space Mono');
+:root {
+    --strong-cyan :  hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-weight: 700;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono";
+    font-size: 16px;
+}
+
+
+.header {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    color: var(--Very-dark-cyan);
+    font-weight: 900;
+    font-size: 20px;
+    margin: 5vw auto;
+}
+
+
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    padding: 1.5%;
+    max-width: 800px;
+    min-height: 380px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.caption {
+    margin: 10px 0;
+}
+
+.input-section {
+    width: 50%;
+    padding: 1.5%;
+
+}
+
+.tip-choices {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.tip-choices * {
+    width: 27%;
+    margin: 10px 3%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.tip-choices div input {
+    width: 100%;
+    font-size: 18px;
+    text-align: end;
+    font-weight: 700;
+    padding-right: 1vw;
+
+}
+
+.tip-percent {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+.input-element{
+    width: 90%;
+    position: relative;
+    margin: 20px 0;
+}
+
+.people {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 15px;
+}
+
+
+
+.input-element input {
+    width: 100%;
+    text-align: end;
+    height: 40px;
+    background-color: hsl(185, 41%, 84%);
+    padding-right: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+
+}
+.input-element .error{
+    border: 2px solid red;
+}
+
+.input-element .error:focus {
+    outline-color: red;
+    border: none;
+}
+
+
+.input-element i {
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+    color: hsl(184, 14%, 56%);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+/* display section */
+.display-section{
+    background-color: hsl(183, 100%, 15%);
+    width: 50%;
+    border-radius: 20px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bold-text{
+color: white;
+font-weight: 700;
+}
+.light-text {
+color:var(--grayish-cyan);
+}
+.number-display {
+color: var(--strong-cyan);
+font-size: 40px;
+font-weight:900;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10% auto;
+}
+
+
+ .reset, .selected {
+    background-color: var(--strong-cyan);
+    color: black
+
+}
+
+.tip-percent:hover:not(.selected), .reset:hover {
+    background-color: rgb(118, 199, 188);
+    color: black
+
+}
+
+
+
+
+
+
+
+
+
+.reset {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+@media (max-width:600px ) and (min-width:375px) {
+    .result {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width:375px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+
+    }
+    .input-section{width: 90%;}
+     .display-section {width: 80%;}
+    
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+ 
+</head>
+<body>
+  <header class="header">Spli<br/>tter</header>
+  <main class="container">
+    <div class="input-section">
+      <div class="input-element">
+        <div class="caption">Bill</div>
+        <i class="fas fa-dollar-sign"></i>
+        <input type="number" placeholder="0" id="bill-input">
+      </div>
+      <div class="tip">
+        <div>Select Tip %</div>
+        <div class="tip-choices">
+          <div class="tip-percent selected">5%</div>
+          <div class="tip-percent">10%</div>
+          <div class="tip-percent">15%</div>
+          <div class="tip-percent">25%</div>
+          <div class="tip-percent">50%</div>
+          <div><input type="number" placeholder="Custom" id="tip-input" class="tip-input"></div>
+        </div>
+      </div>
+      <div class="input-element">
+        <div class="people caption">
+        <div>Number of People</div>
+        <div class="error-message">Can't be zero</div>
+      </div>
+        <i class="fa-solid fa-user"></i>
+        <input type="number" placeholder="0" class="people-input " id="people-input" >
+      </div>
+    </div>
+    <div class="display-section">
+      <div>
+      <div class="result">
+        <div class="text-display"> 
+          <div class="bold-text">Tip Amount</div>
+          <div class="light-text">/ person</div>
+        
+        </div>
+
+        <div class="number-display">$<span id = "tip-amount">0.00</span></div>
+      </div>
+
+      <div class="result">
+        <div class="text-display"> 
+          <div class="bold-text">Total</div>
+          <div class="light-text">/ person</div>
+        
+        </div>
+
+        <div class="number-display">$<span id = "total">0.00</span></div>
+      
+   
+      </div>
+    </div>
+      <button id="reset" class="reset">Reset</button>
+    
+      
+      
+    
+    </div>
+  </main>
+
+  
+
+  
+  
+
+ 
+  
+  <script src="app.js"></script>
+</body>
+</html>
