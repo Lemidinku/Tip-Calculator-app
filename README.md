@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-uu5Jsvw4js)
-- [Live Site URL](https://ephemeral-pegasus-51ad28.netlify.app/)
+- [Live Site URL](https://tip-calculator-lemidinq.netlify.app/)
 
 ## My process
 
